@@ -1,0 +1,77 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a2efd4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .content {
+      background-color: rgb(228, 221, 221);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .button {
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+    .button.is-primary {
+      background-color: #007bff;
+    }
+    .button.is-secondary {
+      background-color: #4b8d39;
+    }
+    .button.is-success {
+      background-color: #28a745;
+    }
+    .button.is-warning {
+      background-color: #ffc107;
+    }
+    .button.is-danger {
+      background-color: #dc3545;
+    }
+    .controls {
+      margin-top: 20px;
+    }
+    .speed-control, .volume-control {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .speed-control label, .volume-control label {
+      margin-right: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+    select, input[type="range"] {
+      padding: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  

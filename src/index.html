@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Recorder and Video Player</title>
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+  <div class="content">
+    <h1>Choose Your Mode</h1>
+
+    <div id="modeSelection">
+      <button id="screenRecorderBtn" class="button is-primary">Screen Recorder</button>
+      <button id="videoPlayerBtn" class="button is-secondary">Video Player</button>
+    </div>
+
+    <!-- Screen Recorder Interface -->
+    <div id="screenRecorderSection" style="display:none;">
+      <h1>Screen Recorder</h1>
+      <video></video>
+      <button id="startBtn" class="button is-primary">Start</button>
+      <button id="stopBtn" class="button is-warning">Stop</button>
+      <button id="videoSelectBtn" class="button is-secondary">Choose a Video Source</button>
+    </div>
+
+    <!-- Video Player Interface -->
+    <div id="videoPlayerSection" style="display:none;">
+      <h1>Video Player</h1>
+      <input type="file" id="videoFileInput" accept="video/*" />
+      <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="auto" width="600" data-setup="{}"></video>
+
+      <div class="controls">
+        <button id="playBtn" class="button is-success">Play</button>
+        <button id="pauseBtn" class="button is-warning">Pause</button>
+        <button id="stopBtnVideo" class="button is-danger">Stop</button>
+      </div>
+
+      <!-- Speed control -->
+      <div class="speed-control">
+        <label for="speedSelect">Playback Speed:</label>
+        <select id="speedSelect">
+          <option value="0.25">0.25x</option>
+          <option value="0.5">0.5x</option>
+          <option value="0.75">0.75x</option>
+          <option value="1" selected>1x</option>
+          <option value="1.25">1.25x</option>
+          <option value="1.5">1.5x</option>
+          <option value="1.75">1.75x</option>
+          <option value="2">2x</option>
+          <option value="2.5">2.5x</option>
+          <option value="3">3x</option>
+        </select>
+      </div>
+
+      <!-- Volume control -->
+      <div class="volume-control">
+        <label for="volumeControl">Volume:</label>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+  <script src="render.js"></script>
+</body>
+</html>
