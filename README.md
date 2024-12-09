@@ -1,4 +1,4 @@
-Description
+
 This desktop application combines a Screen Recorder and Media Player, built using Electron.js, HTML, CSS, and JavaScript. It allows users to record their screen and play various video formats with a user-friendly interface.
 
 Features
@@ -48,8 +48,7 @@ JavaScript
 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-License
-This project is licensed under the MIT License.
+
 
 Contact
 If you have any questions, feel free to reach out to me at manauwar.nrgn@gmail.com.
